@@ -1,4 +1,7 @@
-# 🪟 Windows 12 UI (Concept)
+<h1 align="center">
+  <img src="https://preview.redd.it/what-the-windows-12-logo-would-like-v0-ftq8sb63fclc1.jpg?width=472&format=pjpg&auto=webp&s=686de289d3fe2ff086e3724365c4d63c896c2f7e" width="40" />
+  Windows 12 UI (Concept)
+</h1>
 
 > Modern, clean and minimal Windows 12 inspired interface concept  
 > Built for demonstration and UI/UX exploration purposes only
