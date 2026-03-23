@@ -15,7 +15,7 @@
 
 ## 🖼 Preview
 
-![Windows 12 Banner](https://www.bgr.com/2117367/windows-12-not-coming-in-2026/)
+![Windows 12 Banner](https://www.bgr.com/img/gallery/new-windows-12-rumors-were-immediately-debunked/intro-1772829791.webp)
 
 ---
 
