@@ -236,49 +236,41 @@
 			}, 100);
 		</script>
 	</div>
-	<div id="login" onclick="
-    document.getElementById('loginback').classList.add('fullscreen');
-
-    this.id = 'login-after';
-    this.innerText = 'Logging in...';
-
-    document.querySelector('#loginback').removeChild(
-        document.querySelector('#loginback .power')
-    );
-
-    var qwq = window.setInterval(() => {
-        if (this.innerText.match(/\.\.\./)) {
-            this.innerText = 'Logging in.';
-        } else {
-            this.innerText += '.';
-        }
-    }, 500);
-
-    window.setTimeout(() => {
-        this.style.transition = 'color 500ms';
-    }, 100);
-
-    window.setTimeout(() => {
-        $('#loginback').addClass('close');
-
-        window.setTimeout(() => {
-            $('#loginback').css('opacity', '0');
-        }, 500);
-
-        window.setTimeout(() => {
-            $('#loginback').css('display', 'none');
-            window.clearInterval(qwq);
-        }, 2000);
-
-        if (use_music) {
-            document.querySelector('audio#startup-music').play();
-        }
-    }, 1000);
-
-    this.onclick = null;
-">
-    Log in
-</div>
+	<div id="loginback">
+		<div class="user"></div>
+		<div class="name">Administrator</div>
+		<div id="login" onclick="
+			this.id = 'login-after';
+			this.innerText = 'Logging in...';
+			document.querySelector('#loginback').removeChild(document.querySelector('#loginback .power'));
+			var qwq = window.setInterval(() => {
+				if (this.innerText.match(/\.\.\./)) {
+					this.innerText = 'Logging in.';
+				}
+				else {
+					this.innerText += '.';
+				}
+			}, 500);
+			window.setTimeout(() => {
+				this.style.transition = 'color 500ms';
+			}, 100);
+			window.setTimeout(() => {
+				$('#loginback').addClass('close');
+				window.setTimeout(() => {
+					$('#loginback').css('opacity', '0');
+				}, 500);
+				window.setTimeout(() => {
+					$('#loginback').css('display', 'none');
+					window.clearInterval(qwq);
+				}, 2000);
+				if(use_music){
+					document.querySelector('audio#startup-music').play();
+				}
+			}, 1000);
+			this.onclick = null;
+		">
+			Log in
+		</div>
 		<a class="power" onclick="$(this).addClass('show')">
 			<i class="bi bi-power" onclick="setTimeout(() => {window.location='shutdown.html';}, 200);"
 				win12_title="Shut down"></i>
